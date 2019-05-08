@@ -4,12 +4,13 @@
    License: none (public domain)
 */
 
-.section-style {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
+.large-white{
+	font-size: 20px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-decoration: none;
+		}
+
 
 @h1-font-size: 4rem;
 @h2-font-size: 2rem;
@@ -71,12 +72,12 @@ html, body {
 	max-height: 2000px;
 
 	h1 {
-		font-size: 4rem;
+		font-size: @h1-font-size;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 
 	h2 {
-		font-size: 2rem;
+		font-size: @h2-font-size;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	 color: white;
 	}
@@ -106,14 +107,10 @@ header {
 		.smart-logo {
 			max-width: 360px;
 			max-height: 100px;
-		}
-
-		
+		}	
 
 		.contact-nav a {
-			color: white;
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-		  text-decoration: none;
+			.large-white();
 		}
 }
 
@@ -123,24 +120,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
-
-
-.footer-nav  {
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 25px 0 25px 0;
-	}
-	
-	.smart-logo {
-		max-width: 360px;
-		max-height: 100px;
-	}
-	
-	
-	
 
 .top-content {
 	width: 100%;
@@ -149,7 +129,7 @@ section {
 	align-items: center;
 	padding: 20px;
 	
-
+}
 	.top-content-1 {
 		width: 50%;
 		text-align: center;
@@ -166,44 +146,61 @@ section {
 	 flex-direction:column;
 	}
 
+	.top-content-3 {
+		width: 50%;
+		text-align: center;
+		background-color:#935591 ;
+		height: 400px;
+		flex-direction: column;
+	}
+
+	.top-content-4 {
+	 width: 50%;
+	 text-align: center;
+	 background-color:#5b378e ;
+	 height: 400px;
+	 flex-direction:column;
+	}
+
+	.top-content-5 {
+		width: 50%;
+		text-align: center;
+		background-color: #5b378e;
+		height: 400px;
+		flex-direction: column;
+	}
+
+	.top-content-6 {
+	 width: 50%;
+	 text-align: center;
+	 background-color: #935591;
+	 height: 400px;
+	 flex-direction:column;
+	}
+
+
+.footer-nav  {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 25px 0 25px 0;
+	
+	.smart-logo {
+		max-width: 360px;
+		max-height: 100px;
+	}
+	}	
+	
 	.stupid-img {
 		max-width: 100%;
 		max-height: 400px;
 	}
 
-}
-.smart-summer {
-	max-width: 100%;
-	max-height: 400px;
-}
-
-.creative-week {
-	max-width: 100%;
-	max-height: 400px;
-}
 
 
 
-.bottom-content {
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		padding: 20px;
-		margin: 20px;
-	
-		.bottom-content-1 {
-		  width:70%;
-			text-align: center;
-			background-color: #935591;
-	 height: 400px;
-		}
-	
-		.bottom-content-2 {
-		 text-align: center;
-		 background-color: #935591;
-		 height: 400px;
-		}
-}
+
+
+
 
 

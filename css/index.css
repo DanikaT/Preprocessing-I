@@ -2,11 +2,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-.section-style {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.large-white {
+  font-size: 20px;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
 }
 html,
 body,
@@ -177,6 +177,7 @@ header .smart-logo {
   max-height: 100px;
 }
 header .contact-nav a {
+  font-size: 20px;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
@@ -188,16 +189,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-.footer-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 25px 0 25px 0;
-}
-.smart-logo {
-  max-width: 360px;
-  max-height: 100px;
-}
 .top-content {
   width: 100%;
   display: flex;
@@ -205,48 +196,59 @@ section {
   align-items: center;
   padding: 20px;
 }
-.top-content .top-content-1 {
+.top-content-1 {
   width: 50%;
   text-align: center;
   background-color: #5b378e;
   height: 400px;
   flex-direction: column;
 }
-.top-content .top-content-2 {
+.top-content-2 {
   width: 50%;
   text-align: center;
   background-color: #935591;
   height: 400px;
   flex-direction: column;
 }
-.top-content .stupid-img {
-  max-width: 100%;
-  max-height: 400px;
+.top-content-3 {
+  width: 50%;
+  text-align: center;
+  background-color: #935591 ;
+  height: 400px;
+  flex-direction: column;
 }
-.smart-summer {
-  max-width: 100%;
-  max-height: 400px;
+.top-content-4 {
+  width: 50%;
+  text-align: center;
+  background-color: #5b378e ;
+  height: 400px;
+  flex-direction: column;
 }
-.creative-week {
-  max-width: 100%;
-  max-height: 400px;
+.top-content-5 {
+  width: 50%;
+  text-align: center;
+  background-color: #5b378e;
+  height: 400px;
+  flex-direction: column;
 }
-.bottom-content {
-  width: 100%;
+.top-content-6 {
+  width: 50%;
+  text-align: center;
+  background-color: #935591;
+  height: 400px;
+  flex-direction: column;
+}
+.footer-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin: 20px;
+  padding: 25px 0 25px 0;
 }
-.bottom-content .bottom-content-1 {
-  width: 70%;
-  text-align: center;
-  background-color: #935591;
-  height: 400px;
+.footer-nav .smart-logo {
+  max-width: 360px;
+  max-height: 100px;
 }
-.bottom-content .bottom-content-2 {
-  text-align: center;
-  background-color: #935591;
-  height: 400px;
+.stupid-img {
+  max-width: 100%;
+  max-height: 400px;
 }
