@@ -11,6 +11,10 @@
 	align-items: center;
 }
 
+@h1-font-size: 4rem;
+@h2-font-size: 2rem;
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -88,21 +92,41 @@ header {
    .main-header{
 	   Width: 100%;
 	   border: 2px solid purple;
-	   .section-style ();
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	  
    }
 
   .header-content {
-	width: 48%;
+	width: 50%;
 	border: 2px solid blue;
-	margin: 10px;
-}
+	text-align: center;
+	justify-content: center;
+	}
+
+   h1 {
+	   font-size: @h1-font-size;
+   }
+
+   h2 {
+      font-size:  @h2-font-size;
+   }
+  
 
   .header-image {
-	width: 48%;
-	border: 2px solid blue;
-	margin: 10px;
+	width: 50%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 
-}
+	.sarah-profile {
+		width:60%;
+		height: auto;
+	}
+	
 }
 
 .main-content {
@@ -121,15 +145,13 @@ header {
  .top-content-1 {
 	width: 30%;
 	border: 2px solid rgb(17, 224, 34);
-	margin: 5px;
 	color: white;
 	background-color: black;
 }
 
  .top-content-2 {
-	width: 50%;
+	width: 70%;
 	border: 2px solid purple;
-	margin: 5px;
 	color: black;
 	background-color: white;
 }
@@ -142,17 +164,16 @@ header {
 }
 
  .bottom-content-1 {
-	width: 50%;
+	width: 25%;
 	border: 2px solid rgb(17, 224, 34);
-	margin: 5px;
 	color: black;
 	background-color: white;
 }
 
  .bottom-content-2 {
-	width: 50%;
+	width: 75%;
 	border: 2px solid purple;
-	margin: 5px;
+	
 }
 }
 
