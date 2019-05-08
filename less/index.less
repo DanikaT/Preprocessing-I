@@ -7,7 +7,7 @@
 .section-style {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -66,131 +66,144 @@ table {
 }
 
 html, body {
-	height: 100%;
+	background-color: #5c0a5e ;
+	max-width: 2000px;
+	max-height: 2000px;
+
+	h1 {
+		font-size: 4rem;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+	h2 {
+		font-size: 2rem;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	 color: white;
+	}
+
+	li {
+		color: white;
+	}
+
+	p {
+		color: white;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
 	
 }
 
 header {
 	width: 100%;
-	border: 2px solid green;
-	background-image: url (backround image.jpg);
-	
 
+	.contact-nav {
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 25px 0 25px 0;
+		margin-top: 10px;
+		}
+		 
+		.smart-logo {
+			max-width: 360px;
+			max-height: 100px;
+		}
 
-  .contact-nav  {
+		
+
+		.contact-nav a {
+			color: white;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		  text-decoration: none;
+		}
+}
+
+section {
 	width: 100%;
-	border: 2px solid red;
-	margin: 10px;
-	.section-style();
-   }
-
-   .contact-nav a {
-	width: 100%;
-	border: 2px solid red;
-	
-	 }
-
-   .main-header{
-	   Width: 100%;
-	   border: 2px solid purple;
-	   display: flex;
-	   justify-content: center;
-		 align-items: center;
-   }
-
-  .header-content {
-	width: 50%;
-	border: 2px solid blue;
-	text-align: center;
-	justify-content: center;
-	}
-
-   h1 {
-	   font-size: @h1-font-size;
-   }
-
-   h2 {
-      font-size:  @h2-font-size;
-   }
-  
-
-  .header-image {
-	width: 50%;
-	height: 70%;
+	height: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
 
-	.sarah-profile {
-		width:60%;
-		height: auto;
+}
+
+
+.footer-nav  {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 25px 0 25px 0;
 	}
 	
-}
-
-.main-content {
-	width: 100%;
-	border: 2px solid black;
+	.smart-logo {
+		max-width: 360px;
+		max-height: 100px;
+	}
 	
-}	
-
- .top-content {
-	width: 100%;
-	border: 2px solid orange;
-	.section-style ();
-}
-
- .top-content-1 {
-	width: 30%;
-	border: 2px solid rgb(17, 224, 34);
-	color: white;
-	background-color: black;
-}
-
- .top-content-2 {
-	width: 70%;
-	border: 2px solid purple;
-	color: black;
-	background-color: white;
-}
-
- .bottom-content {
-	width: 100%;
-	border: 2px solid orange;
-	.section-style ();
-}
-
- .bottom-content-1 {
-	width: 25%;
-	border: 2px solid rgb(17, 224, 34);
-	color: black;
-	background-color: white;
-}
-
- .bottom-content-2 {
-	width: 75%;
-	border: 2px solid purple;
 	
-}
-}
-
-.footer {
-	width: 100%;
-	border: 2px solid darkgreen;
-	margin: 10px;
-	.section-style ();
-}
-
-  .footer-nav {
-	  widows: 100%;
-	  border: 2px solid maroon;
-	  .section-style ();
-  }
-  .footer-nav a {
-	widows: 100%;
-	border: 2px solid maroon;
 	
-}
+
+.top-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	
+
+	.top-content-1 {
+		width: 50%;
+		text-align: center;
+		background-color: #5b378e;
+		height: 400px;
+		flex-direction: column;
+	}
+
+	.top-content-2 {
+	 width: 50%;
+	 text-align: center;
+	 background-color: #935591;
+	 height: 400px;
+	 flex-direction:column;
+	}
+
+	.stupid-img {
+		max-width: 100%;
+		max-height: 400px;
+	}
 
 }
+.smart-summer {
+	max-width: 100%;
+	max-height: 400px;
+}
+
+.creative-week {
+	max-width: 100%;
+	max-height: 400px;
+}
+
+
+
+.bottom-content {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 20px;
+		margin: 20px;
+	
+		.bottom-content-1 {
+		  width:70%;
+			text-align: center;
+			background-color: #935591;
+	 height: 400px;
+		}
+	
+		.bottom-content-2 {
+		 text-align: center;
+		 background-color: #935591;
+		 height: 400px;
+		}
+}
+
+
