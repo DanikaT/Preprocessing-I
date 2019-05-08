@@ -2,6 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.section-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 html,
 body,
 div,
@@ -106,6 +112,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: #b9a7ba;
 }
 ol,
 ul {
@@ -133,4 +140,115 @@ table {
 html,
 body {
   height: 100%;
+  background-color: #e8c609;
+}
+header {
+  width: 100%;
+  border: 2px solid green;
+}
+header .contact-nav {
+  width: 100%;
+  border: 2px solid red;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .contact-nav a {
+  width: 100%;
+  border: 2px solid red;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .main-header {
+  Width: 100%;
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-content {
+  width: 48%;
+  border: 2px solid blue;
+  margin: 10px;
+}
+header .header-image {
+  width: 48%;
+  border: 2px solid blue;
+  margin: 10px;
+}
+.main-content {
+  width: 100%;
+  border: 2px solid black;
+  margin: 10px;
+}
+.main-content .top-content {
+  width: 100%;
+  border: 2px solid orange;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content .top-content-1 {
+  width: 30%;
+  border: 2px solid #11e022;
+  margin: 5px;
+  color: white;
+  background-color: black;
+}
+.main-content .top-content-2 {
+  width: 50%;
+  border: 2px solid purple;
+  margin: 5px;
+  color: black;
+  background-color: white;
+}
+.main-content .bottom-content {
+  width: 100%;
+  border: 2px solid orange;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content .bottom-content-1 {
+  width: 50%;
+  border: 2px solid #11e022;
+  margin: 5px;
+  color: black;
+  background-color: white;
+}
+.main-content .bottom-content-2 {
+  width: 50%;
+  border: 2px solid purple;
+  margin: 5px;
+}
+.footer {
+  width: 100%;
+  border: 2px solid darkgreen;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .footer-nav {
+  widows: 100%;
+  border: 2px solid maroon;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .footer-nav a {
+  widows: 100%;
+  border: 2px solid maroon;
 }
