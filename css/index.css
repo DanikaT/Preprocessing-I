@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* VARIABLES */
 html,
 body,
 div,
@@ -134,22 +135,21 @@ html,
 body {
   background-color: #8d69b5;
 }
-h1,
 h2 {
+  color: white;
   font-size: 2rem;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-p,
-a {
+p {
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container {
   max-width: 100%;
 }
 .contact-nav {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -164,6 +164,14 @@ section {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 515px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .top-content-1 {
   max-width: 50%;
   background-color: palevioletred;
@@ -172,12 +180,33 @@ section {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 515px) {
+  .top-content-1 {
+    max-width: 100%;
+  }
 }
 .top-content-2 {
   max-width: 50%;
 }
+@media (max-width: 515px) {
+  .top-content-2 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 515px) {
+  .middle-content-section {
+    flex-direction: column-reverse;
+  }
+}
 .top-content-3 {
   max-width: 50%;
+}
+@media (max-width: 515px) {
+  .top-content-3 {
+    max-width: 100%;
+  }
 }
 .top-content-4 {
   max-width: 50%;
@@ -187,6 +216,11 @@ section {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+@media (max-width: 515px) {
+  .top-content-4 {
+    max-width: 100%;
+  }
 }
 .top-content-5 {
   max-width: 50%;
@@ -198,8 +232,18 @@ section {
   padding: 2rem;
   text-align: center;
 }
+@media (max-width: 515px) {
+  .top-content-5 {
+    max-width: 100%;
+  }
+}
 .top-content-6 {
   max-width: 50%;
+}
+@media (max-width: 515px) {
+  .top-content-6 {
+    max-width: 100%;
+  }
 }
 .stupid-img {
   display: block;

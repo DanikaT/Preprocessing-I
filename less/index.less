@@ -4,6 +4,8 @@
    License: none (public domain)
 */
 
+/* VARIABLES */
+@mobile-normal: ~"(max-width: 515px)";
 
 
 html, body, div, span, applet, object, iframe,
@@ -61,15 +63,15 @@ html, body {
 background-color: #8d69b5;
 }
 
-h1, h2, {
-	font-size: 2rem;
+h2 {
 	color: white;
-	font-family: 'Times New Roman', Times, serif;
+	font-size: 2rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-p, a {
+p {
 	color: white;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -77,10 +79,13 @@ p, a {
 	max-width: 100%;
 
 }
+
+
 	
 
 .contact-nav {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -94,13 +99,23 @@ p, a {
 
 .main-container {
 	max-width: 100%;
-	
-	
 }
 
 section {
 	display: flex;
 	justify-content: center;
+
+}
+
+
+@media @mobile-normal {
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 
 }
 
@@ -112,16 +127,43 @@ section {
 	justify-content: center;
 	align-items: center;
 	padding: 2rem;
+	text-align: center;
+}
+
+@media @mobile-normal {
+	.top-content-1 {
+		max-width: 100%;
+	}
+
+
 }
 	
 .top-content-2 {
 	max-width: 50%;
+	}
+
 	
-	
+@media @mobile-normal {
+	.top-content-2 {
+		max-width: 100%;
+	}
+}
+
+@media @mobile-normal {
+	.middle-content-section {
+		flex-direction: column-reverse;
+	}
 }
 
 .top-content-3 {
 	max-width: 50%;	
+}
+
+
+@media @mobile-normal {
+	.top-content-3 {
+		max-width: 100%;
+	}
 }
 
 .top-content-4 {
@@ -132,6 +174,15 @@ section {
 	justify-content: center;
 	align-items: center;
 	padding: 2rem;
+}
+
+
+@media @mobile-normal {
+	.top-content-4 {
+		max-width: 100%;
+	}
+
+
 }
 
 .top-content-5 {
@@ -145,8 +196,25 @@ section {
 	text-align: center;
 }
 
+
+@media @mobile-normal {
+	.top-content-5 {
+		max-width: 100%;
+	}
+
+
+}
+
 .top-content-6 {
 	max-width: 50%;
+}
+
+@media @mobile-normal {
+	.top-content-6 {
+		max-width: 100%;
+	}
+
+
 }
 
 .stupid-img {
