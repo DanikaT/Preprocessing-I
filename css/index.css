@@ -1,1 +1,296 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* VARIABLES */
+/* MIXINS */
+.font-style {
+  color: white;
+  font-size: 1.02rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #8d69b5;
+}
+html h2,
+body h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html p,
+body p {
+  color: white;
+  font-size: 1.02rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html a,
+body a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.02rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+  max-width: 100%;
+}
+.contact-nav {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.smart-logo {
+  max-width: 400px;
+}
+@media (max-width: 515px) {
+  .contact-nav {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+  }
+}
+@media (max-width: 515px) {
+  .contact-nav a {
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+}
+.main-container {
+  max-width: 100%;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 515px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.cta-button {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #8d69b5;
+}
+.cta-button:hover {
+  background-color: #734e9d;
+}
+@media (max-width: 515px) {
+  .cta-button {
+    padding: 0.5rem;
+  }
+}
+.top-content-1 {
+  max-width: 50%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 515px) {
+  .top-content-1 {
+    max-width: 100%;
+  }
+}
+.top-content-2 {
+  max-width: 50%;
+}
+@media (max-width: 515px) {
+  .top-content-2 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 515px) {
+  .middle-content-section {
+    flex-direction: column-reverse;
+  }
+}
+.top-content-3 {
+  max-width: 50%;
+}
+@media (max-width: 515px) {
+  .top-content-3 {
+    max-width: 100%;
+  }
+}
+.top-content-4 {
+  max-width: 50%;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+@media (max-width: 515px) {
+  .top-content-4 {
+    max-width: 100%;
+  }
+}
+.top-content-5 {
+  max-width: 50%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 515px) {
+  .top-content-5 {
+    max-width: 100%;
+  }
+}
+.top-content-6 {
+  max-width: 50%;
+}
+@media (max-width: 515px) {
+  .top-content-6 {
+    max-width: 100%;
+  }
+}
+.stupid-img {
+  display: block;
+  max-width: 100%;
+}
