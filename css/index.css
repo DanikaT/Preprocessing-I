@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 /* VARIABLES */
+/* MIXINS */
+.font-style {
+  color: white;
+  font-size: 1.02rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 html,
 body,
 div,
@@ -135,17 +141,21 @@ html,
 body {
   background-color: #8d69b5;
 }
-h2 {
+html h2,
+body h2 {
   color: white;
   font-size: 2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-p {
+html p,
+body p {
   color: white;
   font-size: 1.02rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-a {
+html a,
+body a {
+  text-decoration: none;
   color: white;
   font-size: 1.02rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -197,6 +207,9 @@ section {
   border: 1px solid white;
   border-radius: 5px;
   background-color: #8d69b5;
+}
+.cta-button:hover {
+  background-color: #734e9d;
 }
 @media (max-width: 515px) {
   .cta-button {

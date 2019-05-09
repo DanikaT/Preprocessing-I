@@ -7,6 +7,14 @@
 /* VARIABLES */
 @mobile-normal: ~"(max-width: 515px)";
 
+/* MIXINS */
+.font-style {
+	color: white;
+	font-size: 1.02rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,7 +69,7 @@ table {
 
 html, body {
 background-color: #8d69b5;
-}
+
 
 h2 {
 	color: white;
@@ -70,16 +78,15 @@ h2 {
 }
 
 p {
-	color: white;
-	font-size: 1.02rem;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	.font-style();
 }
 
-a {color: white;
-	font-size: 1.02rem;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+a {
+	text-decoration: none;
+	.font-style();
 
+}
+}
 
 .container{
 	max-width: 100%;
@@ -145,6 +152,10 @@ section {
 	border: 1px solid white;
 	border-radius: 5px;
 	background-color: #8d69b5;
+
+&:hover {
+    background-color: darken(#8d69b5, 10%);
+  }
 }
 
 @media @mobile-normal {
