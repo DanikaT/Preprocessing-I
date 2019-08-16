@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -48,6 +49,19 @@ table {
 	border-spacing: 0;
 }
 
+/*VARIABLES*/
+@h1-font-size: 6rem;
+@content-font-color: rgb(65, 63, 63);
+@nav-font-color: grey;
+
+/*MIXINS*/
+.nav-styling() {
+	padding: 1.2rem;
+	text-decoration: none;
+	color: @nav-font-color;
+
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -57,3 +71,70 @@ html, body {
     height: 100%;
 }
 
+header {
+	display: flex;
+	background-color: aqua;
+	padding:1.5rem;
+	justify-content: center;
+
+		nav a {
+			.nav-styling();
+		}
+	
+}
+
+.title {
+	display: flex;
+	background-color: hotpink;
+
+		.profile-pic {
+			padding: 3rem;
+		}
+
+		.profile-picture {
+			border-radius: 30rem;
+			width: 30rem;
+			height: 20rem;
+		}
+
+			.profile-name {
+				padding: 3rem;
+				text-align: center;
+			}
+
+		.profile-name h1 {
+			font-size: @h1-font-size;
+		}
+			.profile-name h2 {
+				font-size: 2rem;
+			}
+		}
+		
+
+
+.Content {
+	display: flex;
+	
+	.content p {
+		color: @content-font-color;
+	}
+}
+
+aside {
+	background-color: lightgreen;
+	width: 100%;
+}
+
+main {
+	background-color: lavenderblush;
+}
+
+footer {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+		footer nav a {
+			.nav-styling();
+	}
